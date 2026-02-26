@@ -1,16 +1,17 @@
 {
-  "name": "magic-cards",
-  "homepage": "https://lxry-comet.github.io/magic-cards",
+  "name": "magic-cards-lesson7",
+  "homepage": "https://lxry-comet.github.io/magic-cards-lesson7",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/magic-cards/",
+    "build": "vite build --base=/magic-cards-lesson7/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "prop-types": "^15.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

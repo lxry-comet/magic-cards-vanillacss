@@ -1,6 +1,7 @@
 
 import Section from './components/Section';
 import './index.css';
+import './App.css';
 
 //? Taro
 import TaroList from './components/TaroList';
