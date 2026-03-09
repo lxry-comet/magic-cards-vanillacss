@@ -1,12 +1,12 @@
 {
-  "name": "magic-cards-lesson7",
-  "homepage": "https://lxry-comet.github.io/magic-cards-lesson7",
+  "name": "magic-cards-vanillacss",
+  "homepage": "https://lxry-comet.github.io/magic-cards-vanillacss",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/magic-cards-lesson7/",
+    "build": "vite build --base=/magic-cards-vanillacss/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

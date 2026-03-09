@@ -1,23 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from "./Section.module.css"; 
 
 function Section({ title, children }) {
   return (
-    <section
-    style={{ backgroundColor: '#0a0a0c', minHeight: '100vh', padding: '40px 0' }}
+    <section className={css.section}
     >
       {/* <h2>{title}</h2> */}
       {/* //! Рендер за умовою: */}
-      {title && <h2
-      
-      style={{ 
-        textAlign: 'center', 
-        color: '#d4af37', 
-        fontFamily: 'serif', 
-        fontSize: '3rem',
-        textShadow: '0 0 15px rgba(212, 175, 55, 0.5)',
-        marginBottom: '40px'
-      }}
+      {title && <h2 className={css.title}
       >{title}</h2>} 
       {children}
     </section>
