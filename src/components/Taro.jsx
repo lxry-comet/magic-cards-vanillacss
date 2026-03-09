@@ -1,4 +1,4 @@
-import css from "./Taro.module.css"; 
+// import css from "./Taro.module.css"; 
 export default function Taro({
   name,
   id,
@@ -8,11 +8,11 @@ export default function Taro({
   imageUrl 
 }) {
   return (
-    <div className={css.cardContainer}>
-      <h2 className={css.itemTitle}>{name} (№{id})</h2>
+    <div className='cardContainer'>
+      <h2 className='itemTitle'>{name} (№{id})</h2>
       
       {/* Якщо у тебе будуть зображення карт */}
-      {imageUrl && <img className={css.itemImage}
+      {imageUrl && <img className='itemImage'
        src={imageUrl} alt={name} />}
       
       {/* <p><strong>Символіка:</strong> {suite}</p> */}
@@ -22,11 +22,11 @@ export default function Taro({
       </div> */}
       
       <>
-        <p className={css.itemInter}><strong>Інтерпретація:</strong> {interpretation}</p>
+        <p className='itemInter'><strong>Інтерпретація:</strong> {interpretation}</p>
       </>
     
       <br />
-      <button className={css.itemButton}
+      <button className='itemButton'
   onMouseEnter={(e) => {
     e.target.style.backgroundColor = '#d4af37';
     e.target.style.color = '#000';

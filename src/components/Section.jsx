@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from "./Section.module.css"; 
+// import css from "./Section.module.css"; 
 
 function Section({ title, children }) {
   return (
-    <section className={css.section}
+    <section className='section'
     >
       {/* <h2>{title}</h2> */}
       {/* //! Рендер за умовою: */}
-      {title && <h2 className={css.title}
+      {title && <h2 className='title'
       >{title}</h2>} 
       {children}
     </section>

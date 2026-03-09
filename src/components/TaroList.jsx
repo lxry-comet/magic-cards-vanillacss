@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
-import taro from '../../json/taro.json'
-import { getBorderColor } from '../../utils/getBorderColor'
-import Taro from '../Taro/Taro'
-import css from './TaroList.module.css'
+import taro from '../json/taro.json'
+import { getBorderColor } from '../utils/getBorderColor'
+import Taro from './Taro'
+// import css from './TaroList.module.css'
 
 function TaroList({ items }) {
 	const cards = Array.isArray(items)
@@ -13,17 +13,17 @@ function TaroList({ items }) {
 			(taro && (taro.cards || (taro.tarot_deck && items.tarot_deck.cards))) ||
 			[]
 
-	if (!cards.length) return <p className={css.itemText}>No cards to display</p>
+	if (!cards.length) return <p className='itemText'>No cards to display</p>
 
 	return (
 		<>
-			<ul className={css.list}>
+			<ul className='list'>
 				{cards.map(card => (
-					<li className={css.item} key={card.id}>
+					<li className='item' key={card.id}>
 						<div
 							className={clsx(
-								css.itemContainer,
-								css[getBorderColor(cards.indexOf(card))]
+								'itemContainer',
+								`itemContainer-${getBorderColor(cards.indexOf(card))}`
 							)}
 						>
 							<Taro
